@@ -10,34 +10,24 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/Videos',
-      name: 'Videos',
-      component: () => import('../views/VideosView.vue')
+      path: '/login',
+      name: 'Iniciar sesion',
+      component: () => import('../views/loginView.vue')
     },
     {
-      path: '/Imagenes',
-      name: 'Imagenes',
-      component: () => import('../views/Imagenview.vue')
+      path: '/registro',
+      name: 'Registro',
+      component: () => import('../views/RegisterView.vue')
     },
     {
-      path: '/Series',
-      name: 'Series',
-      component: () => import('../views/SerieView.vue')
+      path: '/crud',
+      name: 'Crud',
+      component: () => import('../views/CrudView.vue')
     },
     {
-      path: '/Peliculas',
-      name: 'Peliculas',
-      component: () => import('../views/PeliculasView.vue')
-    },
-    {
-      path: '/Animacion',
-      name: 'Animacion',
-      component: () => import('../views/AnimacionView.vue')
-    },
-    {
-      path: '/Comedia',
-      name: 'Comedia',
-      component: () => import('../views/ComediaView.vue')
+      path: '/tarea',
+      name: 'Tarea',
+      component: () => import('../views/Tareaview.vue')
     }
   ]
 })

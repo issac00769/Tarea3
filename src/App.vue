@@ -2,7 +2,7 @@
   <header class="menu-header">
     <nav>
       <template v-for="(item, index) in listamenu" :key="item.path">
-        <RouterLink :to="item.path" :class="{ 'unclickable': index % 2 !== 0 || index == 1, 'active': $route.path === item.path }">
+        <RouterLink :to="item.path">
           {{ item.name }}
         </RouterLink>
       </template>
