@@ -1,14 +1,4 @@
 <template>
-  <header class="menu-header">
-    <nav>
-      <template v-for="(item, index) in listamenu" :key="item.path">
-        <RouterLink :to="item.path">
-          {{ item.name }}
-        </RouterLink>
-      </template>
-    </nav>
-  </header>
-
   <main>
     <RouterView />
   </main>
@@ -31,8 +21,9 @@ const listamenu = router.options.routes
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* Ajustar z-index para asegurar que esté por encima de otros elementos */
+  z-index: 1000; 
 }
+
 
 nav {
   display: flex;

@@ -10,26 +10,13 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/login',
-      name: 'Iniciar sesion',
-      component: () => import('../views/loginView.vue')
-    },
-    {
       path: '/registro',
       name: 'Registro',
       component: () => import('../views/RegisterView.vue')
     },
-    {
-      path: '/crud',
-      name: 'Crud',
-      component: () => import('../views/CrudView.vue')
-    },
-    {
-      path: '/tarea',
-      name: 'Tarea',
-      component: () => import('../views/Tareaview.vue')
-    }
   ]
 })
+
+
 
 export default router

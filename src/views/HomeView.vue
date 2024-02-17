@@ -1,10 +1,12 @@
 <template lang="">
   <div>
-    <h1>Hola, mucho gusto. Estas en el inicio :)</h1>
+                <ComLogin />
     
   </div>
 </template>
 <script setup lang="ts">
+import ComLogin from '@/components/ComLogin.vue';
+
 
 </script>
 <style scoped>
